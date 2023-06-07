@@ -1,0 +1,227 @@
+@media screen and (max-width: 390px) {
+  .contenedor-logo-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  #iconomenu {
+    display: flex;
+  }
+
+  .menu {
+    width: 100%;
+    padding: 1px 0px;
+  }
+
+  .menu ul {
+    margin-top: 10px;
+    background-color: #f3f3f3;
+    padding: 0px 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 10px;
+    gap: 0;
+    top: 100%;
+    left: -220%;
+    width: 100%;
+    height: 50vh;
+    z-index: 8;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.8s;
+  }
+
+  .menu ul.abrirmenu {
+    left: 0px;
+    transition: all 0.8s;
+  }
+
+  .menu ul li {
+    width: 100%;
+  }
+
+  .menu ul li a {
+    border-bottom: 2px #333 dotted;
+    display: block;
+    padding: 15px 0px;
+  }
+
+  .caption {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    left: 45%;
+    top: 88%;
+    width: 90%;
+    padding: 50px 20px;
+    transform: translate(-50%, -50%);
+    background-color: var(--rosa);
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  }
+
+  .azul {
+    font-size: 45px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .more-info .circulo-more {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .informa {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+  }
+
+  .info-caja-azul h2 {
+    font-size: 38px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  .info-caja-azul p {
+    width: 90%;
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+  .form {
+    /* border: 1px blue solid; */
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"] {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .ventajas {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ventaja-info {
+    max-width: 90%;
+  }
+
+  .galeria {
+    flex-direction: column;
+  }
+
+  .galeria a {
+    filter: brightness(50%);
+  }
+
+  .galeria a .icono i {
+    opacity: 1;
+  }
+
+  .contenedor-acordeon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .acordeon1,
+  .acordeon2 {
+    width: 96%;
+  }
+
+  .contenedor-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .direccion p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .copyri p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .mis-recursos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mis-cosas {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .link {
+    text-align: center;
+  }
+
+  .mi-serv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-serv img {
+    filter: grayscale(0%);
+  }
+
+  .informacion-serv {
+    margin-top: 30px;
+    width: 90%;
+  }
+
+  .informacion-serv h2,
+  .informacion-serv p,
+  .informacion-serv div {
+    text-align: center;
+  }
+
+  .contenedor-planes {
+    /* border: 1px red solid; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .plan {
+    box-shadow: 0px 0px 10px var(--verde);
+  }
+
+  .contenedor-contacto {
+    width: 90%;
+  }
+
+  .datos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contenedor-formulario {
+    width: 90%;
+  }
+
+  .formulario input[type="text"],
+  .formulario input[type="email"] {
+    margin-right: 100px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+}

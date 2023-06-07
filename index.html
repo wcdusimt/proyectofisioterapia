@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icono-quiro.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://kit.fontawesome.com/0516348396.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <script src="fancybox/jquery.fancybox.js"></script>
+
+  <!-- Slide de fotos -->
+  <script src="responsiveslides.min.js"></script>
+
+  <!-- Carousel -->
+  <script type="text/javascript" src="jquery.tinycarousel.js"></script>
+
+  <!-- Wow -->
+  <script src="wow.min.js"></script>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/movil.css">
+  <title>χειρο clinica</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="ancho contenedor-logo-menu">
+      <a href="#">
+        <figure class="animate__animated animate__flipInX animate__slower animate__infinite logotipo">
+          <img src="img/logo.svg" alt="logotipo">
+        </figure>
+      </a>
+
+      <!-- icono sandwich -->
+      <div id="iconomenu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+
+      <nav class="menu">
+        <ul id="contenedormenu">
+          <li>
+            <a class="animate__animated animate__backInLeft" href="#" target="_blank">Inicio</a>
+          </li>
+          <li>
+            <a class="animate__animated animate__backInDown" href="informacion.html" target="_blank">Información
+              Útil</a>
+          </li>
+          <li>
+            <a class="animate__animated animate__backInDown" href="servicios.html" target="_blank">Servicios</a>
+          </li>
+          <li>
+            <a class="animate__animated animate__backInRight" href="contacto.html" target="_blank">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slide de Fotos -->
+  <div class="animate__animated animate__fadeInLeft callbacks_container">
+    <ul class="rslides" id="slider4">
+      <li>
+        <img src="img/slide01.jpg" alt="">
+        <p class="caption">Bienvenido a <span class="azul">χειρο</span></p>
+      </li>
+      <li>
+        <img src="img/slide02.jpg" alt="">
+        <p class="caption">Tenemos un equipo de profesionales certificados</p>
+      </li>
+      <li>
+        <img src="img/slide03.jpg" alt="">
+        <p class="caption">Somos la clinica <span class="azul">#1</span> de fisioterapia</p>
+      </li>
+    </ul>
+  </div>
+
+  <br>
+
+  <section class="animate__animated animate__bounceInRight animate__delay-1s mas-info">
+    <div class="ancho info">
+      <article class="more-info">
+        <h2>Nuestros Servicios</h2>
+
+        <figure class="imagen-art">
+          <img src="img/img01.jpg" alt="">
+        </figure>
+
+        <p>
+          Desde el alivio del dolor y la curación hasta la restauración de la movilidad y la función, estamos dedicados
+          a brindarle atención y fisioterapia de la mejor calidad.
+        </p>
+
+        <div class="circulo-more">
+          <a href="#">Más</a>
+        </div>
+      </article>
+
+      <article class="more-info">
+        <h2>Recuperación</h2>
+
+        <figure class="imagen-art">
+          <img src="img/img02.jpg" alt="">
+        </figure>
+
+        <p>
+          Empezamos por entender a nuestros pacientes con un diagnóstico certero del problema. Nuestro equipo respeta el
+          dolor de nuestros pacientes y busca aliviarlo
+        </p>
+
+        <div class="circulo-more">
+          <a href="#">Más</a>
+        </div>
+      </article>
+
+      <article class="more-info">
+        <h2>Video Tutoriales</h2>
+
+        <figure class="imagen-art">
+          <img src="img/img03.jpg" alt="">
+        </figure>
+
+        <p>
+          ¿Necesita mejorar la flexibilidad, fuerza, equilibrio o la forma física? Mira nuestros videotutoriales
+          diseñados por fisioterapeutas experimentados.
+        </p>
+
+        <div class="circulo-more">
+          <a href="#">Más</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <br>
+
+  <!-- Parallax -->
+  <section class="contenedor-parallax">
+
+  </section>
+
+  <section class="wow animate__animated animate__fadeIn animate__delay-1s caja-azul">
+    <div class="caja-transparencia" id="modal">
+      <div class="tit-ico">
+        <h3>Obtén tu primera cita Gratis</h3>
+        <i id="cerrarbtn" class="ico fa-solid fa-circle-xmark"></i>
+      </div>
+      <div class="modal">
+
+        <form class="form">
+          <label for="fname">Nombre</label>
+          <input type="text" name="fname" id="fname">
+          <label for="email">Correo</label>
+          <input type="email" id="email">
+        </form>
+
+        <div class="boton-sub">
+          <a href="#">Enviar ahora</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="ancho info-caja-azul">
+      <div class="informa">
+        <h2> <span class="negrita">Gratis </span>La Primera Consulta </h2>
+        <p>
+          Brindamos consultas gratuitas a todos nuestros clientes. Su sesión será con un fisioterapeuta especialista y
+          experimentado que puede analizar su lesión, discutir cualquier problema que tenga y decidir el mejor
+          tratamiento.
+        </p>
+      </div>
+
+      <div class="circulo-blanco">
+        <a id="Btn" href="#">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ancho encabezados">
+    <h2>Ventajas de la Fisioterapia</h2>
+    <hr class="linea-encabenzado">
+  </div>
+
+  <br>
+
+  <section class="wow animate__animated animate__zoomIn mis-ventajas">
+    <div class="ancho ventajas">
+      <article class="ventaja-info">
+        <div class="circulo-colores">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+
+        <h2>Mejor alivio a tu dolor </h2>
+        <p>
+          La fisioterapia puede ayudarte a controlar, mitigar o incluso eliminar cualquier dolor, independientemente de
+          su
+          tipo y origen, para que puedas volver a disfrutar de tus actividades físicas.
+        </p>
+
+        <div class="btn-mas">
+          <a href="#">Ver más <i class="fa-solid fa-greater-than"></i></a>
+        </div>
+      </article>
+
+      <article class="ventaja-info">
+        <div class="circulo-colores">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <h2>Recuperación adaptada</h2>
+        <p>
+          Su camino hacia la recuperación se adapta completamente a sus necesidades. Su fisioterapeuta registrado
+          desarrollará un programa de recuperación personalizado que se adaptará perfectamente a usted.
+        </p>
+
+        <div class="btn-mas">
+          <a href="#">Ver más <i class="fa-solid fa-greater-than"></i></a>
+        </div>
+      </article>
+
+      <article class="ventaja-info">
+        <div class="circulo-colores">
+          <i class="fa-solid fa-bandage"></i>
+        </div>
+
+        <h2>Prevención de lesiones futuras</h2>
+        <p>
+          Dependiendo de su lesión, su fisioterapeuta se tomará el tiempo para mostrarle cómo mover correctamente su
+          cuerpo para maximizar los beneficios del tratamiento y prevenir futuros esguinces.
+        </p>
+
+        <div class="btn-mas">
+          <a href="#">Ver más <i class="fa-solid fa-greater-than"></i></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section class="wow animate__animated animate__slideInLeft galeria">
+    <a href="img/foto1.jpg" class="fancybox" title="Foto 1" rel="gallery1">
+      <img src="img/foto1.jpg" alt="image">
+
+      <div class="icono">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </a>
+
+    <a href="img/foto2.jpg" class="fancybox" title="Foto 2" rel="gallery1">
+      <img src="img/foto2.jpg" alt="image">
+      <div class="icono">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </a>
+
+    <a href="img/foto3.jpg" class="fancybox" title="Foto 3" rel="gallery1">
+      <img src="img/foto3.jpg" alt="image">
+      <div class="icono">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </a>
+
+    <a href="img/foto4.jpg" class="fancybox" title="Foto 4" rel="gallery1">
+      <img src="img/foto4.jpg" alt="image">
+      <div class="icono">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </a>
+
+    <a href="img/foto5.jpg" class="fancybox" title="Foto 5" rel="gallery1">
+      <img src="img/foto5.jpg" alt="image">
+      <div class="icono">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </a>
+  </section>
+
+  <div class="ancho encabezados">
+    <h2>Tratamientos comunes de fisioterapia</h2>
+    <hr class="linea-encabenzado">
+  </div>
+
+  <!-- Acordeon -->
+  <section class="wow animate__animated animate__zoomIn">
+
+    <div class="contenedor-acordeon ancho">
+
+      <div class="acordeon1">
+        <!-- Lado izquierdo -->
+        <div class="titulo-icono" id="titulo1">
+          <i class="ico1 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color1">Tratamiento temprano de lesiones</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo2">
+          <i class="ico2 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color2">Tratamiento de lesiones subagudas de tejidos blandos</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo3">
+          <i class="ico3 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color3">Análisis de pasos</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo4">
+          <i class="ico4 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color4">Análisis biomecánico</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo5">
+          <i class="ico5 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color5">Ejercicios de propiocepción y equilibrio</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido5">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo6">
+          <i class="ico6 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color6">Fisioterapia con ultrasonido en tiempo real</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido6">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+      </div>
+
+      <div class="acordeon2">
+        <!-- Lado derecho -->
+        <div class="titulo-icono" id="titulo7">
+          <i class="ico7 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color7">Masaje de tejidos blandos</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido7">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo8">
+          <i class="ico8 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color8">Abrazadera o soporte</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido8">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo9">
+          <i class="ico9 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color9">Electroterapia y modalidades locales</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido9">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo10">
+          <i class="ico10 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color10">Técnicas de movilización conjunta</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido10">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo11">
+          <i class="ico11 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color11">Cinta de kinesiología</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido11">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+
+        <div class="titulo-icono" id="titulo12">
+          <i class="ico12 fa-solid fa-circle-arrow-right"></i>
+          <h2 class="color12">Prehabilitación</h2>
+        </div>
+        <p class="acordeon-contenido" id="contenido12">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi a ab, enim totam corporis ducimus, deserunt
+          ad tempora libero facilis eos quam at maiores tempore voluptatem excepturi, provident obcaecati aperiam
+          deleniti
+          itaque soluta. Ex aut praesentium iste quam. Voluptatibus beatae quos eius id pariatur sit sapiente
+          blanditiis.
+          Quisquam, iure reiciendis.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="ancho encabezados">
+    <h2>Eventos y Noticias</h2>
+    <hr class="linea-encabenzado">
+  </div>
+  <br><br>
+
+  <!-- Carousell -->
+  <div class="wow animate__animated animate__fadeInRight" id="slider1">
+    <a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
+    <div class="viewport">
+      <ul class="overview">
+        <li>
+          <p class="fecha">23/10/23</p>
+          <h2>Fuerza y acondicionamiento</h2>
+          <br>
+          <img src="img/picture01.jpg" />
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci quaerat veniam! Velit non sit eos.
+            Expedita harum amet tempora qui quibusdam, quo quos minima beatae corrupti dolore at minus?</p>
+        </li>
+
+        <li>
+          <p class="fecha">24/10/23</p>
+          <h2>Terapia manual</h2>
+          <br>
+          <img src="img/picture02.jpg" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci quaerat veniam! Velit non sit eos.
+            Expedita harum amet tempora qui quibusdam, quo quos minima beatae corrupti dolore at minus?</p>
+        </li>
+
+        <li>
+          <p class="fecha">25/10/23</p>
+          <h2>Quads para rehabilitación LCA</h2>
+          <br>
+          <img src="img/picture03.jpg" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci quaerat veniam! Velit non sit eos.
+            Expedita harum amet tempora qui quibusdam, quo quos minima beatae corrupti dolore at minus?</p>
+        </li>
+
+        <li>
+          <p class="fecha">26/10/23</p>
+          <h2>Tratar la ansiedad con punción</h2>
+          <br>
+          <img src="img/picture04.jpg" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci quaerat veniam! Velit non sit eos.
+            Expedita harum amet tempora qui quibusdam, quo quos minima beatae corrupti dolore at minus?</p>
+        </li>
+
+        <li>
+          <p class="fecha">27/10/23</p>
+          <h2>Columna sana pies sanos</h2>
+          <br>
+          <img src="img/picture05.jpg" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci quaerat veniam! Velit non sit eos.
+            Expedita harum amet tempora qui quibusdam, quo quos minima beatae corrupti dolore at minus?</p>
+        </li>
+      </ul>
+    </div>
+    <a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
+  </div>
+
+  <br><br>
+
+  <div class="ancho encabezados">
+    <h2>Video demostrativo</h2>
+    <hr class="linea-encabenzado">
+  </div>
+  <br>
+
+  <article class="wow animate__animated animate__pulse">
+    <div class="contenedorYT">
+      <iframe src="https://www.youtube.com/embed/pywsMDfDoDY" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </article>
+  <br>
+
+  <a href="#" class="to-top">
+    <i class="fa-solid fa-circle-up"></i>
+  </a>
+
+
+  <footer>
+    <div class="ancho contenedor-footer">
+      <div class="direccion">
+        <p>
+          C. 23 Diag. 390a, San Luis, 97205 Mérida, Yuc.
+        </p>
+      </div>
+      <div class="redes">
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-google-plus-g"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-pinterest"></i>
+        </a>
+      </div>
+      <div class="copyri">
+        <p>
+          ©&nbsp;2023 | Políticas de Privacidad
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Funciones JS -->
+  <script>
+    //wow
+    new WOW().init();
+
+    //scroll up
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+      } else {
+        toTop.classList.remove("active");
+      }
+    })
+    //menu
+    $("#iconomenu").click(function () {
+      $("#contenedormenu").toggleClass("abrirmenu");
+    });
+    //Slide Fotos
+    $(function () {
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+
+    //ACORDEON
+
+    $("#titulo1").click(function () {
+      $("#contenido1").slideToggle();
+      $(".ico1").toggleClass("rotar");
+      $(".color1").toggleClass("cambiarcolor");
+    });
+    $("#titulo2").click(function () {
+      $("#contenido2").slideToggle();
+      $(".ico2").toggleClass("rotar");
+      $(".color2").toggleClass("cambiarcolor");
+    });
+    $("#titulo3").click(function () {
+      $("#contenido3").slideToggle();
+      $(".ico3").toggleClass("rotar");
+      $(".color3").toggleClass("cambiarcolor");
+    });
+    $("#titulo4").click(function () {
+      $("#contenido4").slideToggle();
+      $(".ico4").toggleClass("rotar");
+      $(".color4").toggleClass("cambiarcolor");
+    });
+    $("#titulo5").click(function () {
+      $("#contenido5").slideToggle();
+      $(".ico5").toggleClass("rotar");
+      $(".color5").toggleClass("cambiarcolor");
+    });
+    $("#titulo6").click(function () {
+      $("#contenido6").slideToggle();
+      $(".ico6").toggleClass("rotar");
+      $(".color6").toggleClass("cambiarcolor");
+    });
+    $("#titulo7").click(function () {
+      $("#contenido7").slideToggle();
+      $(".ico7").toggleClass("rotar");
+      $(".color7").toggleClass("cambiarcolor");
+    });
+    $("#titulo8").click(function () {
+      $("#contenido8").slideToggle();
+      $(".ico8").toggleClass("rotar");
+      $(".color8").toggleClass("cambiarcolor");
+    });
+    $("#titulo9").click(function () {
+      $("#contenido9").slideToggle();
+      $(".ico9").toggleClass("rotar");
+      $(".color9").toggleClass("cambiarcolor");
+    });
+    $("#titulo10").click(function () {
+      $("#contenido10").slideToggle();
+      $(".ico10").toggleClass("rotar");
+      $(".color10").toggleClass("cambiarcolor");
+    });
+    $("#titulo11").click(function () {
+      $("#contenido11").slideToggle();
+      $(".ico11").toggleClass("rotar");
+      $(".color11").toggleClass("cambiarcolor");
+    });
+    $("#titulo12").click(function () {
+      $("#contenido12").slideToggle();
+      $(".ico12").toggleClass("rotar");
+      $(".color12").toggleClass("cambiarcolor");
+    });
+
+    //Carousel
+    $(document).ready(function () {
+      $('#slider1').tinycarousel();
+    });
+
+    //Modal
+    var fondomodal = document.getElementById("modal");
+    var btn = document.getElementById("Btn");
+    var cerrar = document.getElementById("cerrarbtn");
+
+    btn.onclick = function () {
+      fondomodal.style.display = "flex";
+    };
+
+    cerrar.onclick = function () {
+      fondomodal.style.display = "none";
+    };
+  </script>
+
+</body>
+
+</html>
